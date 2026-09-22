@@ -44,6 +44,12 @@ numbers2.add("097");
 numbers2.add("096");
 numbers2.add("097"); //same number again
 System.out.println(numbers2); //prints only 2 numbers
+
+//Predict then run : add the same-looking Contact twice into a HashSet<Contact>
+Set<Contact> uniqueContacts = new HashSet<>();
+uniqueContacts.add(new Contact("Jacob", "091"));
+uniqueContacts.add(new Contact("Jacob", "091")); //same contact again
+System.out.println(uniqueContacts.size()); //prints both contacts, even though they look the same
         
     }
 }

@@ -85,6 +85,8 @@ System.out.println("Found contact: " + found.getName());
 for(Map.Entry<String, Contact> entry : phoneBook.entrySet()) {
    System.out.println(entry.getKey() + " ->" + entry.getValue().getName());
 }
+ContactAPI api = new ContactAPI();
+api.fetchContact(1); //fetches contact with id 1 from the API
         
     }
 }

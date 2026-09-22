@@ -62,12 +62,12 @@ names.add("Jacob");
 System.out.println(names); //prints in the order they were added
 
 // Part 6: TreeSet - sorts the elements in natural order
-Set<String> numbers3 = new TreeSet<>();
-numbers3.add("100");
-numbers3.add("50");
-numbers3.add("1");
-numbers3.add("-10");
-System.out.println(numbers3); S
+Set<Integer> numbers3 = new TreeSet<>();
+numbers3.add(100);
+numbers3.add(50);
+numbers3.add(1);
+numbers3.add(-10);
+System.out.println(numbers3); 
         
     }
 }

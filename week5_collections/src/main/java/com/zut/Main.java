@@ -2,6 +2,8 @@ package com.zut;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.LinkedList;
+import java.util.Set;
+import java.util.HashSet;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,6 +29,21 @@ System.out.println(queue);
 //Same middle- insert on the ArrayList from Part 2
 contacts.add(1, "Alex-097 ");
 System.out.println(contacts);
+
+//== Part 4: HashSet  - no more duplicate numbers==
+
+List<String> numbers = new ArrayList<>();
+numbers.add("097");
+numbers.add("096");
+numbers.add("097"); //same number again
+System.out.println(numbers); //prints all 3 numbers
+
+//Fixed the bud where we have duplicate numbers by swapping List/ArrayList for Set/HashSet
+Set<String> numbers2 = new HashSet<>();
+numbers2.add("097");
+numbers2.add("096");
+numbers2.add("097"); //same number again
+System.out.println(numbers2); //prints only 2 numbers
         
     }
 }

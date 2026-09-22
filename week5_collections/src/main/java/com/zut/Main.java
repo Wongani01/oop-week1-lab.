@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.LinkedList;
 import java.util.Set;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 public class Main {
     public static void main(String[] args) {
@@ -50,6 +52,22 @@ Set<Contact> uniqueContacts = new HashSet<>();
 uniqueContacts.add(new Contact("Jacob", "091"));
 uniqueContacts.add(new Contact("Jacob", "091")); //same contact again
 System.out.println(uniqueContacts.size()); //prints both contacts, even though they look the same
+
+// Part 5: LinkedHashSet - preserves insertion order
+Set<String> names = new LinkedHashSet<>();
+names.add("Shakil");
+names.add("Chanda");
+names.add("Ben"); 
+names.add("Jacob"); 
+System.out.println(names); //prints in the order they were added
+
+// Part 6: TreeSet - sorts the elements in natural order
+Set<String> numbers3 = new TreeSet<>();
+numbers3.add("100");
+numbers3.add("50");
+numbers3.add("1");
+numbers3.add("10");
+System.out.println(numbers3); 
         
     }
 }

@@ -66,8 +66,8 @@ Set<String> numbers3 = new TreeSet<>();
 numbers3.add("100");
 numbers3.add("50");
 numbers3.add("1");
-numbers3.add("10");
-System.out.println(numbers3); 
+numbers3.add("-10");
+System.out.println(numbers3); S
         
     }
 }

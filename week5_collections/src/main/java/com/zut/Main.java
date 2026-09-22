@@ -6,6 +6,8 @@ import java.util.Set;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.TreeSet;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -68,6 +70,21 @@ numbers3.add(50);
 numbers3.add(1);
 numbers3.add(-10);
 System.out.println(numbers3); 
+
+// Part 7: HashMap - key-value 
+
+Map<String, Contact> phoneBook = new HashMap<>();
+phoneBook.put("097", new Contact("Jacob", "097"));
+phoneBook.put("096", new Contact("Mary", "096"));
+System.out.println(phoneBook); 
+
+Contact found = phoneBook.get("096");
+System.out.println("Found contact: " + found.getName());
+
+//Part 6.3 //iterate over all entries
+for(Map.Entry<String, Contact> entry : phoneBook.entrySet()) {
+   System.out.println(entry.getKey() + " ->" + entry.getValue().getName());
+}
         
     }
 }
